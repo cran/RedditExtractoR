@@ -1,0 +1,15 @@
+Package: RedditExtractoR
+Type: Package
+Title: Reddit Data Extraction Toolkit
+Version: 1.0.0
+Imports: RJSONIO
+Suggests: tcltk
+Date: 2015-06-14
+Author: Ivan Rivera <ivan.s.rivera@gmail.com>
+Maintainer: Ivan Rivera <ivan.s.rivera@gmail.com>
+Description: Reddit is an online bulletin board and a social networking website where registered users can submit and discuss content. This package uses Reddit API to extract Reddit data using Reddit API. The retrieved data has flat structure, i.e. the relationship between comments is not preserved.This may be addressed in the next update of this package. Note that due to the API limitations, the number of comments that can extracted is limited to 500 per thread. The package consists of 3 functions, one for extracting relevant URLS, one for extracting features out of given URLs and one that does both together.
+License: GPL-3
+Packaged: 2015-06-16 05:56:56 UTC; Ivan
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-06-16 11:24:00
