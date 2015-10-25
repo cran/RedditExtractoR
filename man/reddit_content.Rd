@@ -12,7 +12,8 @@ reddit_content(URL, wait_time = 2)
 \item{wait_time}{wait time in seconds between page requests. 2 by default and it is also the minimum (API rate limit).}
 }
 \value{
-A data frame with post / thread date (post_date), comment date (comm_date), number of comments within a post / thread (num_comments), subreddit (subreddit)
+A data frame with structure / position of the comment with respect to other comments (structure), ID (id), post / thread date (post_date),
+comment date (comm_date), number of comments within a post / thread (num_comments), subreddit (subreddit)
 upvote proportion (upvote_prop), post /thread score (post_score), author of the post / thread (author), user corresponding to the comment (user),
 comment score (comment_score), controversiality (controversiality), comment (comment), title (title), post / thread text (post_text), URL referenced (link)
 domain of the references URL (domain)

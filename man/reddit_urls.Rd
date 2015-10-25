@@ -5,15 +5,15 @@
 \title{Returns relevant reddit URLs}
 \usage{
 reddit_urls(search_terms = NA, regex_filter = "", subreddit = NA,
-  cn_threshold = 0, page_threshold = 1, sort_by = "comments",
+  cn_threshold = 0, page_threshold = 1, sort_by = "relevance",
   wait_time = 2)
 }
 \arguments{
-\item{search_terms}{A string of terms to be searched on Reddit.}
+\item{search_terms}{A character string to be searched on Reddit.}
 
 \item{regex_filter}{An optional regular expression filter that will remove URLs with titles that do not match the condition.}
 
-\item{subreddit}{An optional character string that will restrict the search to the specified subreddit.}
+\item{subreddit}{An optional character string that will restrict the search to the specified subreddits (separated by space).}
 
 \item{cn_threshold}{Comment number threshold that remove URLs with fewer comments that cn_threshold. 0 by default.}
 
