@@ -1,7 +1,9 @@
 #' Returns relevant reddit URLs
 #' 
 #' @examples
+#' \dontrun{
 #' example_urls = reddit_urls(search_terms="science")
+#' }
 #' 
 #' @param search_terms A character string to be searched on Reddit.
 #' @param regex_filter An optional regular expression filter that will remove URLs with titles that do not match the condition.
@@ -45,7 +47,10 @@ reddit_urls = function(search_terms=NA,
     
     search_JSON  = tryCatch(RJSONIO::fromJSON(readLines(search_query, warn = FALSE)), error = function(e) NULL)
     
-    if(is.null(search_JSON)){stop("Cannot connect to the website")}
+    if(is.null(search_JSON)){
+      cat(paste("Cannot connect to the website, skipping...\n"))
+      next
+      }
     
     else{
       

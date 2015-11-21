@@ -1,8 +1,8 @@
-64a71ad3644d4fdf94939ea190f27d9e *DESCRIPTION
-1280056fed1be864194c8a46b2dff8d3 *NAMESPACE
-df8d5672e6b5729a1bdf0e83901f8a66 *R/RedditExtractoR.R
+2d169565bfeedfcb94a15b1dd6d2079c *DESCRIPTION
+bdcc5a69fa34c101bdd8761f866eab5f *NAMESPACE
+89639137557027345bfe5ce80e00e2a1 *R/RedditExtractoR.R
 f648c37558817e2b2d7c8ca0bae00b9e *man/RedditExtractoR-package.Rd
-6f6f2f1f988de8975395a8a6823735ac *man/construct_graph.Rd
-383881d43623c0ddfe85ca48b4cc7f84 *man/get_reddit.Rd
-0b429ac063d1f1d601aadf382f1c811a *man/reddit_content.Rd
-00f21b8746b1993f45916eb6dd5d62c4 *man/reddit_urls.Rd
+5f54d4ed6970138bf96d8bd1ba93401f *man/construct_graph.Rd
+ba46bec14b9414f3382233a70c1db296 *man/get_reddit.Rd
+5553dbcede4a3063e8af23756b2ebc42 *man/reddit_content.Rd
+aca6e2a3c3455690989ba0c075906873 *man/reddit_urls.Rd
