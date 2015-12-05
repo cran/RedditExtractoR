@@ -1,9 +1,10 @@
 Package: RedditExtractoR
 Type: Package
 Title: Reddit Data Extraction Toolkit
-Version: 2.0.1
+Version: 2.0.2
 Imports: RJSONIO, utils, igraph, grDevices, graphics
-Date: 2015-11-21
+Depends: R (>= 3.2.0)
+Date: 2015-12-05
 Author: Ivan Rivera <ivan.s.rivera@gmail.com>
 Maintainer: Ivan Rivera <ivan.s.rivera@gmail.com>
 Description: Reddit is an online bulletin board and a social networking website
@@ -16,6 +17,6 @@ Description: Reddit is an online bulletin board and a social networking website
 License: GPL-3
 RoxygenNote: 5.0.1
 NeedsCompilation: no
-Packaged: 2015-11-21 02:12:02 UTC; Ivan
+Packaged: 2015-12-05 04:39:09 UTC; Ivan
 Repository: CRAN
-Date/Publication: 2015-11-21 15:56:08
+Date/Publication: 2015-12-05 15:42:57
