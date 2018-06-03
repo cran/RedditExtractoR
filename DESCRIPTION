@@ -1,22 +1,17 @@
 Package: RedditExtractoR
 Type: Package
 Title: Reddit Data Extraction Toolkit
-Version: 2.0.2
-Imports: RJSONIO, utils, igraph, grDevices, graphics
+Version: 2.1.2
+Imports: RJSONIO, utils, igraph, grDevices, graphics, magrittr, dplyr,
+        visNetwork, rlang
 Depends: R (>= 3.2.0)
-Date: 2015-12-05
+Date: 2018-06-03
 Author: Ivan Rivera <ivan.s.rivera@gmail.com>
 Maintainer: Ivan Rivera <ivan.s.rivera@gmail.com>
-Description: Reddit is an online bulletin board and a social networking website
-    where registered users can submit and discuss content. This package uses
-    Reddit API to extract Reddit data using Reddit API. Note that due to the API
-    limitations, the number of comments that can extracted is limited to 500 per
-    thread. The package consists of 4 functions, one for extracting relevant URLs,
-    one for extracting features out of given URLs, one that does both together and
-    one that constructs graphs based on the structure of a thread.
+Description: A collection of tools for extracting structured data from Reddit.
 License: GPL-3
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
 NeedsCompilation: no
-Packaged: 2015-12-05 04:39:09 UTC; Ivan
+Packaged: 2018-06-03 14:48:05 UTC; ivan
 Repository: CRAN
-Date/Publication: 2015-12-05 15:42:57
+Date/Publication: 2018-06-03 14:54:33 UTC
