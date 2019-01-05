@@ -4,12 +4,13 @@
 #' @param include_author a TRUE/FALSE indicator for whether or not the author should be considered in the resulting network, if TRUE, comments at the top of the tree will be treated as relies to the original posts, otherwise these comments will be disregarded
 #' @param agg a TRUE/FALSE indicator that allows you to aggregate results, if FALSE, the results will remain disaggregated
 #' @importFrom magrittr "%>%" "%<>%"
-#' @importFrom dplyr filter select mutate left_join coalesce rename group_by ungroup summarise row_number
+#' @importFrom dplyr filter select mutate left_join coalesce rename group_by ungroup summarise row_number transmute
 #' @importFrom rlang .data
 #' @return a list with df (effectively an edge list without IDs), node_df (node list), edge_df (edge list), igrpah (igraph object), plot (plot object)
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' # load libraries
 #' library(dplyr)
 #' library(RedditExtractoR)
@@ -20,17 +21,19 @@
 #' network_list <- target_df %>% user_network(include_author=FALSE, agg=TRUE) # extract the network
 #' network_list$plot # explore the plot
 #' str(network_list$df) # check out the contents
+#' }
 user_network <- function(thread_df, include_author=TRUE, agg=FALSE){
   
   # identify sender / receiver relationships
   sender_receiver_df <- thread_df %>% 
     select(.data$structure, .data$user, .data$author, .data$comment) %>% 
     rename("sender"=.data$user) %>%
-    mutate(response_to=ifelse(!grepl("_", .data$structure), "", gsub("_\\d+$", "", .data$structure))) %>%
+    mutate(response_to=as.character(ifelse(!grepl("_", .data$structure), "", gsub("_\\d+$", "", .data$structure)))) %>%
     left_join(
-      thread_df %>% 
-        select(.data$structure, .data$user) %>%
-        rename("response_to"=.data$structure, "receiver"=.data$user),
+      thread_df %>% transmute(
+        response_to=as.character(.data$structure), 
+        receiver=as.character(.data$user)
+      ),
       by="response_to"
     ) %>% mutate(receiver=coalesce(.data$receiver, ifelse(include_author, .data$author, ""))) %>%
     filter(

@@ -20,6 +20,7 @@ a list with df (effectively an edge list without IDs), node_df (node list), edge
 User relationship network
 }
 \examples{
+\dontrun{
 # load libraries
 library(dplyr)
 library(RedditExtractoR)
@@ -30,4 +31,5 @@ URL \%>\% reddit_content # get the contents of a small thread
 network_list <- target_df \%>\% user_network(include_author=FALSE, agg=TRUE) # extract the network
 network_list$plot # explore the plot
 str(network_list$df) # check out the contents
+}
 }
