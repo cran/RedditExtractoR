@@ -1,5 +1,13 @@
 # RedditExtractor
 
+## Version 3.0.5
+
+Fixed a bug in comment extraction which occurred when a thread would report more than zero comments even none were present
+
+## Version 3.0.4
+
+* Added self-text into the data frame with thread URLs
+
 ## Version 3.0.3
 
 * Updated the `get_user_content` method so that it can now accept a vector of users
