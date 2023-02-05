@@ -1,6 +1,6 @@
-58b4187f17c5c8fd58a9a69b3b60fac1 *DESCRIPTION
+1402ff73360b29e411ce6f6349040438 *DESCRIPTION
 efdfbcc44310b0f15d062d71f9474c68 *NAMESPACE
-f593acedc932c5fc7a51fee381af9540 *NEWS.md
+138b20ce8ddc819054de33fc92c01050 *NEWS.md
 49f28fc489568128ec3c411b930eb10a *R/build_comment_ids.R
 210920d9f5930c57bb5abd9453e5e21c *R/constants.R
 3dc04b79377ba6334d140e633c4113ea *R/converters.R
@@ -9,10 +9,10 @@ d918a5e44df6d5a92158cf4294a2f0ad *R/find_thread_urls.R
 d91a120d67b2f84bac811e39138563f7 *R/get_thread_content.R
 2e7d621c38dcbe1def5a657285ec69d7 *R/get_user_content.R
 dad9a01dff82271303a65a83ce19fe94 *R/helpers.R
-718a49780ef0e1135fe303992603b8c4 *R/json_extractors.R
-439186bbe216b15799e2b38b18e4a717 *R/parsers.R
+f417af340aaf25a5011d2197341819f1 *R/json_extractors.R
+225c17a2b3ce638441765b4f12bee15f *R/parsers.R
 f98387bd3fa7e4fdbb85af265786aed2 *R/sysdata.rda
-8d1492134572e32e6a2b125228f9d079 *R/url_to_json.R
+5e9e0057d5805ba7e50b1d8d43c6a800 *R/url_to_json.R
 fef0242cb2458532bae2d641d0aa8c69 *R/validators.R
 b5c7351c353b1106d24e21496437e954 *README.md
 ceb2b6e29ff56bdef219e45f4a7eae6c *man/RedditExtractoR-package.Rd
