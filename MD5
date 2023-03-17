@@ -1,13 +1,13 @@
-cb06c85dceeb23b3f0fc455b4292df07 *DESCRIPTION
+7179cb09ac3f24c0fac329500fbcd13a *DESCRIPTION
 efdfbcc44310b0f15d062d71f9474c68 *NAMESPACE
-60e15a4dd3adfade891fe88c03b7982a *NEWS.md
+c860132e40830e2a2e0d1ca110196cf2 *NEWS.md
 49f28fc489568128ec3c411b930eb10a *R/build_comment_ids.R
 210920d9f5930c57bb5abd9453e5e21c *R/constants.R
 3dc04b79377ba6334d140e633c4113ea *R/converters.R
 834649507c98c3e2ac5c0678b1746862 *R/find_subreddits.R
 d918a5e44df6d5a92158cf4294a2f0ad *R/find_thread_urls.R
 d91a120d67b2f84bac811e39138563f7 *R/get_thread_content.R
-9aa8125abaee05fdcf38fc85c972a2c3 *R/get_user_content.R
+5769a8cb067233b013cf1ebef696ad86 *R/get_user_content.R
 dad9a01dff82271303a65a83ce19fe94 *R/helpers.R
 f417af340aaf25a5011d2197341819f1 *R/json_extractors.R
 225c17a2b3ce638441765b4f12bee15f *R/parsers.R
